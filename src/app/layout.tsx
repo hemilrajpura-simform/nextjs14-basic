@@ -21,7 +21,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <SessionWrapper>
           <header>
-            <p>HEADER</p>
+            <p>NextJS 14</p>
           </header>
           {children}
         </SessionWrapper>

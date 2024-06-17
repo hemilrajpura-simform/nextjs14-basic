@@ -1,20 +1,21 @@
 "use client";
-import { useSession, signIn, signOut } from "next-auth/react";
+import TopicCard from "./component/TopicCard";
+import { TopicDetails } from "./utils/TopicsData";
 
 export default function Component() {
-  const { data: session } = useSession();
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
-    );
-  }
   return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn("github")}>Sign in using Github</button>
-    </>
+    <div className="flex flex-wrap gap-4">
+      {TopicDetails.map((topic) => {
+        return (
+          <TopicCard
+            key={topic.cardHeader}
+            CardDesc={topic.cardDesc}
+            CardHeader={topic.cardHeader}
+            cardImageLink={topic.cardImage}
+            CardLink={topic.CardLink}
+          />
+        );
+      })}
+    </div>
   );
 }
