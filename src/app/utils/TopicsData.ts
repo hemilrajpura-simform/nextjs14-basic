@@ -3,8 +3,8 @@ export const TopicDetails = [
     cardImage:
       "https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1700825321/server_side_rendering_guide_header/server_side_rendering_guide_header-png?_i=AA",
     CardLink: "server-data-fetching",
-    cardHeader: "Data Fetching Technique",
-    cardDesc: "some Desc",
+    cardHeader: "Server Side Data Fetching",
+    cardDesc: "Data Fetching Technique",
   },
   {
     cardImage:
