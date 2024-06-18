@@ -1,5 +1,13 @@
 import React from "react";
 
+type Params = {
+  productId: number;
+};
+
+type ProductDetailsProps = {
+  params: Params;
+};
+
 const fetchProductItem = async (id: number) => {
   try {
     const apiRes = await fetch(`http://fakestoreapi.com/products/${id}`);
@@ -10,7 +18,7 @@ const fetchProductItem = async (id: number) => {
   }
 };
 
-const ProductItem = async ({ params }) => {
+const ProductItem = async ({ params }: ProductDetailsProps) => {
   const product = await fetchProductItem(params.productId);
   console.log(params.productId);
 

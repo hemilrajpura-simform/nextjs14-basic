@@ -10,7 +10,7 @@ const fetchUser = async (currentUser: number) => {
   }
 };
 type Params = {
-  details: number; // Adjust the type based on the actual type of params.details
+  details: number;
 };
 
 type UserDetailsProps = {
