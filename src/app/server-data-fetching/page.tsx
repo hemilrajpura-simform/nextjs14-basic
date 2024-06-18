@@ -1,18 +1,28 @@
 import Link from "next/link";
 import React from "react";
 
+type User = {
+  id: number;
+  firstName: string;
+  lastName: string;
+  age: number;
+  gender: string;
+  email: string;
+  // Add other properties as needed
+};
+
 const fetchUsers = async () => {
   try {
     const apiRes = await fetch("http://dummyjson.com/users");
     const result = await apiRes.json();
     return result.users;
-  } catch (e) {
-    throw new Error(e);
+  } catch {
+    throw new Error("Error");
   }
 };
 
 const ServerSideDataFetching = async () => {
-  const users = await fetchUsers();
+  const users: User[] = await fetchUsers();
 
   return (
     <div>

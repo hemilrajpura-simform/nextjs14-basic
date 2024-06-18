@@ -1,8 +1,6 @@
 import React from "react";
 
-const page = ({ params }) => {
-  console.log(params);
-
+const page = () => {
   return <div>ProductID subpage</div>;
 };
 

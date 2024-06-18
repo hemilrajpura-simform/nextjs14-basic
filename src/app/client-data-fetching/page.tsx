@@ -2,8 +2,14 @@
 
 import React, { useEffect, useState } from "react";
 
+type User = {
+  id: number;
+  firstName: string;
+  lastName: string;
+};
+
 const ClientSideDataFetching = () => {
-  const [users, setUsers] = useState([]);
+  const [users, setUsers] = useState<User[]>([]);
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchUsers = async () => {
@@ -13,15 +19,15 @@ const ClientSideDataFetching = () => {
       const result = await apiRes.json();
       setIsLoading(false);
       setUsers(result.users);
-    } catch (e) {
-      throw new Error(e);
+    } catch {
+      throw new Error("Error");
     }
   };
 
   useEffect(() => {
     fetchUsers();
   }, []);
-
+  console.log(users);
   return (
     <div>
       <h1>Client Side Data Fetching</h1>

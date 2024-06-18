@@ -1,16 +1,23 @@
 import React from "react";
 
-const fetchUser = async (currentUser) => {
+const fetchUser = async (currentUser: number) => {
   try {
     const apiRes = await fetch(`http://dummyjson.com/users/${currentUser}`);
     const result = await apiRes.json();
     return result;
-  } catch (e) {
-    throw new Error(e);
+  } catch {
+    throw new Error("Error");
   }
 };
+type Params = {
+  details: number; // Adjust the type based on the actual type of params.details
+};
 
-const userDetails = async ({ params }) => {
+type UserDetailsProps = {
+  params: Params;
+};
+
+const userDetails = async ({ params }: UserDetailsProps) => {
   const currentUserDetails = await fetchUser(params.details);
   console.log(currentUserDetails);
 

@@ -1,8 +1,11 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
+type Product = {
+  id: number;
+  title: string;
+};
 const page = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     const getData = async () => {
