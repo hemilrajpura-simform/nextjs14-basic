@@ -29,18 +29,6 @@ export const TopicDetails = [
   },
   {
     cardImage: "https://next-auth.js.org/img/social-media-card.png",
-    CardLink: "",
-    cardHeader: "NextAuth.js",
-    cardDesc: "some Desc",
-  },
-  {
-    cardImage: "https://next-auth.js.org/img/social-media-card.png",
-    CardLink: "",
-    cardHeader: "NextAuth.js",
-    cardDesc: "some Desc",
-  },
-  {
-    cardImage: "https://next-auth.js.org/img/social-media-card.png",
     CardLink: "/login",
     cardHeader: "NextAuth.js",
     cardDesc: "Login using Github",
