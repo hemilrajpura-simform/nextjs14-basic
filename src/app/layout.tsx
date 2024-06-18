@@ -19,12 +19,8 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SessionWrapper>
-          <header>
-            <p>NextJS 14</p>
-          </header>
-          {children}
-        </SessionWrapper>
+        <SessionWrapper>{children}</SessionWrapper>
+        <h1 className="text-center">NextJS 14</h1>
       </body>
     </html>
   );

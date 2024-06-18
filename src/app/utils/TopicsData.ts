@@ -2,14 +2,14 @@ export const TopicDetails = [
   {
     cardImage:
       "https://cloudinary-marketing-res.cloudinary.com/images/w_1000,c_scale/v1700825321/server_side_rendering_guide_header/server_side_rendering_guide_header-png?_i=AA",
-    CardLink: "",
+    CardLink: "server-data-fetching",
     cardHeader: "Server Side Data Fetching",
     cardDesc: "some Desc",
   },
   {
     cardImage:
       "https://nextjs.org/api/docs-og?title=Rendering:%20Client-side%20Rendering%20(CSR)",
-    CardLink: "",
+    CardLink: "client-data-fetching",
     cardHeader: "Client Side Data Fetching",
     cardDesc: "some Desc",
   },
