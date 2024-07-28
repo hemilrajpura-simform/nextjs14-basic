@@ -25,10 +25,18 @@ export default async function RootLayout({
       <html lang="en">
         <body className={inter.className}>
           <SignedOut>
-            <SignInButton />
+            <SignInButton>
+              <button className="bg-white text-gray-500 hover:bg-gray-100 py-2 px-4 rounded">
+                Sign In
+              </button>
+            </SignInButton>
           </SignedOut>
           <SignedIn>
-            <UserButton />
+            <UserButton>
+              <button className="bg-white text-gray-500 hover:bg-gray-100 py-2 px-4 rounded">
+                Sign Out
+              </button>
+            </UserButton>
           </SignedIn>
           {children}
 
