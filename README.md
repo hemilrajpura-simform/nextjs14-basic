@@ -3,6 +3,11 @@
 This repository is dedicated to learning and practicing Next.js 14 concepts. Below is a comprehensive list of topics covered in this project:
 
 📚 Topics Covered
+- Folder Structure
+- Client Side Rendering
+- Server Side Rendering
+- Authentication using Clerk
+- Authentication using auth.js
 - Static Routing 🌐: Learn how to create pages that are statically routed using the file system-based routing mechanism
 - Dynamic Routing 🌍 : Understand how to create dynamic routes and handle dynamic segments in URLs.
 - <Link /> Component 🔗 : Use the <Link /> component for client-side navigation and to optimize for faster page transitions
@@ -41,3 +46,12 @@ Make sure you have the following installed:
 
 4) Start the development server:
 `npm run dev`
+
+## 📖 Learning Resources
+- https://www.youtube.com/watch?v=wm5gMKuwSYk&t=105s
+- https://nextjs.org/docs/
+- https://chatgpt.com/share/895728ba-200d-4ef3-990e-c32028da1567
+
+## Deployment
+- Link https://nextjs14-basic.vercel.app/
+
