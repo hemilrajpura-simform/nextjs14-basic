@@ -4,8 +4,6 @@ This repository is dedicated to learning and practicing Next.js 14 concepts. Bel
 
 📚 Topics Covered
 - Folder Structure
-- Client Side Rendering
-- Server Side Rendering
 - Authentication using Clerk
 - Authentication using auth.js
 - Functions : cookies, draftMode, userAgent 
