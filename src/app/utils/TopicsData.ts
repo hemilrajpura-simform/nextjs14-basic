@@ -28,11 +28,5 @@ export const TopicDetails = [
     cardHeader: "Dynamic Routing",
     cardDesc:
       "Visit all products page, we can click to a product and view details ",
-  },
-  {
-    cardImage: "https://next-auth.js.org/img/social-media-card.png",
-    CardLink: "/login",
-    cardHeader: "NextAuth.js",
-    cardDesc: "Login using Github",
-  },
+  }
 ];
