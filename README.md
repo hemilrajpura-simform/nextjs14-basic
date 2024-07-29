@@ -8,6 +8,7 @@ This repository is dedicated to learning and practicing Next.js 14 concepts. Bel
 - Server Side Rendering
 - Authentication using Clerk
 - Authentication using auth.js
+- Functions : cookies, draftMode, userAgent 
 - Static Routing 🌐: Learn how to create pages that are statically routed using the file system-based routing mechanism
 - Dynamic Routing 🌍 : Understand how to create dynamic routes and handle dynamic segments in URLs.
 - <Link /> Component 🔗 : Use the <Link /> component for client-side navigation and to optimize for faster page transitions
